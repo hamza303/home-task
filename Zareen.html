@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zareen — Quiet Warmth</title>
+<link rel="stylesheet" href="zareen.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <nav class="nav__links nav__links--left">
+    <a href="#story">Story</a>
+    <a href="#craft">Craft</a>
+    <a href="#piece">The Piece</a>
+  </nav>
+  <a href="#top" class="brand" aria-label="Zareen — home">
+    <img class="brand__cream" src="zareen-lockup.png" alt="">
+    <img class="brand__ink" src="zareen-lockup-ink.png" alt="">
+  </a>
+  <div class="nav__links nav__links--right">
+    <a href="#lookbook">Lookbook</a>
+    <button class="cart-btn" id="cartOpen" aria-label="Open cart">
+      Cart <span class="count" id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__media">
+    <image-slot id="hero" placeholder="Drop a hero image — model in hoodie, soft natural light" fit="cover"></image-slot>
+  </div>
+  <div class="hero__scrim"></div>
+  <div class="wrap">
+    <div class="hero__row">
+      <div>
+        <span class="eyebrow hero__eyebrow reveal">Heritage knitwear — Est. MMXXV</span>
+        <h1 class="display reveal">Quiet<br>warmth.</h1>
+        <p class="hero__sub reveal">A single hooded sweatshirt, made in cashmere-cotton and finished by hand. Nothing more than it needs to be.</p>
+      </div>
+      <div class="hero__meta reveal">
+        The Atelier Hoodie<br>
+        Cashmere &amp; long-staple cotton<br>
+        Four earth tones — £285
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue reveal"><span>Scroll</span><span class="ln"></span></div>
+</section>
+
+<!-- ============ STORY ============ -->
+<section class="story" id="story">
+  <div class="wrap story__grid">
+    <p class="story__lead reveal">Zareen means <em>golden</em>. We took it less as a colour than as a measure — the quiet worth of a thing made slowly, owned for years, and never spoken of loudly.</p>
+    <div class="story__body reveal">
+      <p class="drop">We began with one question: what would a hoodie look like if it were treated like fine tailoring? Not louder, not branded, not seasonal — but considered to the last stitch, warm against the skin, and the same friend a decade from now.</p>
+      <p>The answer became a single garment, refined obsessively rather than multiplied carelessly. We don't release collections. We release one piece, and we make it as well as it can be made.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CRAFT ============ -->
+<section class="craft" id="craft">
+  <div class="wrap">
+    <div class="craft__head">
+      <span class="eyebrow reveal">The making</span>
+      <h2 class="reveal">Three quiet<br>obsessions.</h2>
+    </div>
+    <div class="craft__grid">
+      <article class="pillar reveal">
+        <span class="no">01 — Cloth</span>
+        <h3>A cashmere hand</h3>
+        <p>Spun from a blend of Mongolian cashmere and long-staple Supima cotton, the loopback knit is brushed to a softness that holds warmth without weight. It settles into you, not the other way around.</p>
+      </article>
+      <article class="pillar reveal">
+        <span class="no">02 — Hand</span>
+        <h3>Finished by people</h3>
+        <p>Seams are felled by hand, cuffs are set with a tonal stitch, and the drawcord is tipped in solid brass that warms to a soft gold over time. Each piece passes through nine pairs of hands.</p>
+      </article>
+      <article class="pillar reveal">
+        <span class="no">03 — Time</span>
+        <h3>Made to outlast</h3>
+        <p>Pre-washed for a calm, settled drape and reinforced where wear gathers. Cared for simply, it is meant to be the piece you reach for in ten winters — and the one you mend rather than replace.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUCT ============ -->
+<section class="product" id="piece">
+  <div class="wrap product__grid">
+    <div class="product__media reveal">
+      <image-slot id="product" placeholder="Drop the hoodie product image" fit="cover"></image-slot>
+      <div class="product__swatchnote" id="swatchNote">Colour — Sand</div>
+    </div>
+    <div class="product__panel reveal">
+      <span class="eyebrow">The Atelier Hoodie</span>
+      <h2>The only<br>hoodie.</h2>
+      <div class="product__price">£285 <small>— GBP, duties included</small></div>
+      <p class="product__desc">Cashmere-cotton loopback in a relaxed, considered cut. Set-in hood, hand-felled seams, brass-tipped drawcord. One garment, made properly.</p>
+
+      <div class="opt">
+        <div class="opt__label"><span class="k">Colour</span><span class="v" id="colorVal">Sand</span></div>
+        <div class="swatches" id="swatches" role="radiogroup" aria-label="Colour">
+          <button class="swatch" style="--c:#DDD1BC" role="radio" aria-checked="true"  data-name="Sand"></button>
+          <button class="swatch" style="--c:#C2AC8C" role="radio" aria-checked="false" data-name="Clay"></button>
+          <button class="swatch" style="--c:#EFE9DD" role="radio" aria-checked="false" data-name="Cream"></button>
+          <button class="swatch" style="--c:#5B5043" role="radio" aria-checked="false" data-name="Umber"></button>
+          <button class="swatch" style="--c:#2A2620" role="radio" aria-checked="false" data-name="Espresso"></button>
+        </div>
+      </div>
+
+      <div class="opt">
+        <div class="opt__label"><span class="k">Size</span><span class="v" id="sizeVal">Select a size</span></div>
+        <div class="sizes" id="sizes" role="radiogroup" aria-label="Size">
+          <button class="size" role="radio" aria-checked="false">XS</button>
+          <button class="size" role="radio" aria-checked="false">S</button>
+          <button class="size" role="radio" aria-checked="false">M</button>
+          <button class="size" role="radio" aria-checked="false">L</button>
+          <button class="size" role="radio" aria-checked="false">XL</button>
+          <button class="size" role="radio" aria-checked="false" disabled>XXL</button>
+        </div>
+      </div>
+
+      <button class="add" id="addBtn">
+        <span class="label">Add to cart</span>
+        <span class="done-label">Added — view cart</span>
+      </button>
+      <div class="product__ship">Complimentary shipping &amp; 30-day returns</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOOKBOOK ============ -->
+<section class="look" id="lookbook">
+  <div class="wrap">
+    <div class="look__head reveal">
+      <span class="eyebrow">Worn quietly</span>
+      <h2>The lookbook</h2>
+    </div>
+    <div class="look__grid">
+      <image-slot id="lb1" class="lb-a reveal" placeholder="Editorial — full figure"></image-slot>
+      <image-slot id="lb2" class="lb-b reveal" placeholder="Detail — cuff &amp; drawcord"></image-slot>
+      <image-slot id="lb3" class="lb-c reveal" placeholder="Detail — fabric texture"></image-slot>
+      <image-slot id="lb4" class="lb-d reveal" placeholder="Editorial — landscape"></image-slot>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BRAND INTERSTITIAL / QUOTE ============ -->
+<section class="quote">
+  <div class="wrap">
+    <div class="quote__mark reveal"><img src="zareen-lockup.png" alt="Zareen"></div>
+    <p class="reveal">Luxury that <span>whispers</span> is the only luxury worth keeping.</p>
+    <div class="cite reveal">The Zareen ethos</div>
+  </div>
+</section>
+
+<!-- ============ SIGNUP + FOOTER ============ -->
+<footer class="foot" id="footer">
+  <div class="wrap">
+    <div class="signup">
+      <h2 class="reveal">Be told first.</h2>
+      <div class="reveal">
+        <form class="signup__form" id="signupForm">
+          <input type="email" placeholder="Your email address" aria-label="Email" required>
+          <button type="submit" id="signupBtn">Join</button>
+        </form>
+        <p class="signup__note">One quiet note when the next piece is ready. No noise.</p>
+      </div>
+    </div>
+
+    <div class="foot__cols">
+      <div class="foot__brand-wrap">
+        <div class="foot__brand"><img src="zareen-lockup-ink.png" alt="Zareen"></div>
+        <p>Heritage knitwear, made slowly. One garment, finished by hand, meant to be kept.</p>
+      </div>
+      <div class="foot__col">
+        <h4>Shop</h4>
+        <a href="#piece">The Atelier Hoodie</a>
+        <a href="#piece">Colours</a>
+        <a href="#piece">Size guide</a>
+        <a href="#piece">Gift card</a>
+      </div>
+      <div class="foot__col">
+        <h4>House</h4>
+        <a href="#story">Our story</a>
+        <a href="#craft">The making</a>
+        <a href="#lookbook">Lookbook</a>
+        <a href="#footer">Journal</a>
+      </div>
+      <div class="foot__col">
+        <h4>Care</h4>
+        <a href="#footer">Shipping</a>
+        <a href="#footer">Returns</a>
+        <a href="#footer">Repairs</a>
+        <a href="#footer">Contact</a>
+      </div>
+    </div>
+
+    <div class="foot__bar">
+      <span>© MMXXV Zareen. Made slowly.</span>
+      <span>London — Worldwide</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Cart">
+  <div class="drawer__head">
+    <h3>Your cart</h3>
+    <button class="x" id="cartClose">Close</button>
+  </div>
+  <div class="drawer__items" id="cartItems">
+    <p class="drawer__empty">Your cart is quiet for now.<br>The Atelier Hoodie is waiting.</p>
+  </div>
+  <div class="drawer__foot">
+    <div class="drawer__total"><span class="t">Total</span><span class="a" id="cartTotal">£0</span></div>
+    <button class="checkout">Proceed to checkout</button>
+  </div>
+</aside>
+
+<script src="image-slot.js"></script>
+<script src="zareen.js"></script>
+</body>
+</html>
